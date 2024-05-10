@@ -34,6 +34,6 @@ jobs:
           script: |
             id
             rm -rf git-demo-devops
-            git clone https://alvinsenjaya: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@github.com/alvinsenjaya/git-demo-devops.git
+            git clone https://github.com/alvinsenjaya/git-demo-devops.git
             cp git-demo-devops/* /var/www/html
             rm -rf git-demo-devops
