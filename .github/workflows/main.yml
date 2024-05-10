@@ -31,4 +31,9 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: whoami
+          script: /
+            id
+            rm -rf git-demo-devops
+            git clone https://github.com/alvinsenjaya/git-demo-devops
+            cp git-demo-devops/* /var/www/html
+            rm -rf git-demo-devops
